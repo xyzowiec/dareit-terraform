@@ -1,7 +1,6 @@
-resource "google_compute_instance" "dareit-vm-ci" {
-  name         = "dareit-vm-tf-ci"
-  machine_type = "e2-medium"
-  zone         = "us-central1-a"
+resource "google_storage_bucket" "my_bucket" {
+  name     = "dareit-vm-tf-ci-22222220"
+  location = "us-central1"
 
   tags = ["dareit"]
 
