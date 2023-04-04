@@ -5,13 +5,4 @@ resource "google_storage_bucket" "new_bucket" {
   versioning {
     enabled = true
   }
-
-  lifecycle {
-    rule {
-      action    = "Delete"
-      condition {
-        age = 30
-      }
-    }
-  }
 }
